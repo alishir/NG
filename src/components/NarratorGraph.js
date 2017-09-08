@@ -1,7 +1,6 @@
 import { 
     Sigma,
     LoadGEXF,
-    LoadJSON,
     Filter
 } from 'react-sigma';
 import React, { Component } from 'react';
