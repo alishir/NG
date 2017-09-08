@@ -1,6 +1,7 @@
 import { 
     Sigma,
     LoadGEXF,
+    LoadJSON,
     Filter
 } from 'react-sigma';
 import React, { Component } from 'react';
@@ -17,9 +18,10 @@ class NarratorGraph extends Component {
                     settings={{defaultEdgeType: "arrow"}}
                     onClickNode={ e => this.setState({selectedNode: e.data.node.id}) } 
                     onClickStage={ e => this.setState({selectedNode: null})} >
-                    <LoadGEXF path={"/narrators.gexf"}>
+                    {/* <LoadGEXF path={"/NG/narrators.gexf"}>
                         <Filter neighborsOf={ this.state.selectedNode } />
-                    </LoadGEXF>
+                    </LoadGEXF> */}
+                    <LoadJSON path={"/NG/sample.json.gz"}/>
                 </Sigma>
         );
     }

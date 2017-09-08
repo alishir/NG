@@ -1,6 +1,7 @@
 {
   "name": "narrator_graph",
   "version": "0.1.0",
+  "homepage": "https://alishir.github.io/NG",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
@@ -12,9 +13,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "deploy" : "npm run build && gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "gh-pages": "^1.0.0"
   }
 }
