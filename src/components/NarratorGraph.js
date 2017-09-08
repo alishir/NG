@@ -18,10 +18,10 @@ class NarratorGraph extends Component {
                     settings={{defaultEdgeType: "arrow"}}
                     onClickNode={ e => this.setState({selectedNode: e.data.node.id}) } 
                     onClickStage={ e => this.setState({selectedNode: null})} >
-                    {/* <LoadGEXF path={"/NG/narrators.gexf"}>
+                     <LoadGEXF path={"/NG/narrators.gexf"}>
                         <Filter neighborsOf={ this.state.selectedNode } />
-                    </LoadGEXF> */}
-                    <LoadJSON path={"/NG/sample.json.gz"}/>
+                    </LoadGEXF> 
+                    {/* <LoadJSON path={"/NG/sample.json.gz"}/> */}
                 </Sigma>
         );
     }
