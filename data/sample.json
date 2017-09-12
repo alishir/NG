@@ -14,7 +14,8 @@
       "label": "Another node",
       "x": 3,
       "y": 1,
-      "size": 2
+      "size": 2,
+      "color": "rgba(200, 200, 0, 10)"
     },
     {
       "id": "n2",
